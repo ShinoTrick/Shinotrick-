@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 
 <meta name="viewport"
-      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 
 <title>SHINOFFX Trick Site</title>
 
@@ -22,6 +22,7 @@ html,body{
 
 body{
     min-height:100vh;
+
     background:
         radial-gradient(
             circle at 50% -10%,
@@ -93,7 +94,7 @@ body{
 header{
     text-align:center;
     position:relative;
-    margin:8px 0 23px;
+    margin:8px 0 20px;
 }
 
 .logo{
@@ -114,7 +115,6 @@ header{
     padding:5px 11px;
 
     border:1px solid #63202e;
-
     border-radius:99px;
 
     color:#ff5472;
@@ -123,6 +123,118 @@ header{
     font-weight:bold;
 
     letter-spacing:1.5px;
+}
+
+
+/* =========================
+   AVISO
+========================= */
+
+.notice{
+    margin:0 0 12px;
+
+    padding:14px;
+
+    border:1px solid #2b2025;
+    border-radius:15px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,23,68,.07),
+            rgba(255,255,255,.02)
+        );
+
+    text-align:center;
+
+    position:relative;
+    z-index:1;
+}
+
+.notice-title{
+    color:#ff5472;
+
+    font-size:11px;
+    font-weight:900;
+
+    letter-spacing:1px;
+
+    margin-bottom:7px;
+}
+
+.notice-text{
+    color:#85858d;
+
+    font-size:10px;
+    line-height:1.55;
+}
+
+
+/* =========================
+   DISCORD META
+========================= */
+
+.discord-goal{
+    margin:0 0 18px;
+
+    padding:13px;
+
+    border:1px solid #29252a;
+    border-radius:15px;
+
+    background:#101014;
+
+    text-align:center;
+
+    position:relative;
+    z-index:1;
+}
+
+.discord-goal strong{
+    display:block;
+
+    color:#fff;
+
+    font-size:12px;
+
+    margin-bottom:5px;
+}
+
+.discord-goal span{
+    display:block;
+
+    color:#777780;
+
+    font-size:9px;
+    line-height:1.5;
+}
+
+.discord-goal a{
+    display:inline-block;
+
+    margin-top:9px;
+
+    padding:8px 14px;
+
+    border-radius:10px;
+
+    background:#ff1744;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:9px;
+    font-weight:900;
+
+    box-shadow:
+        0 6px 18px rgba(255,23,68,.22);
+
+    transition:.15s;
+}
+
+.discord-goal a:active{
+    transform:scale(.96);
 }
 
 
@@ -170,7 +282,7 @@ header{
 
 
 /* =========================
-   BOTÕES TRICKS
+   BOTÕES
 ========================= */
 
 .btn{
@@ -194,6 +306,7 @@ header{
     margin-bottom:11px;
 
     display:flex;
+
     align-items:center;
 
     gap:12px;
@@ -236,13 +349,11 @@ header{
     place-items:center;
 
     font-weight:900;
-
     font-size:15px;
 }
 
 .txt strong{
     display:block;
-
     font-size:14px;
 }
 
@@ -305,7 +416,6 @@ header{
 ========================= */
 
 .explorer{
-
     border:1px solid #25252c;
 
     border-radius:15px;
@@ -316,7 +426,6 @@ header{
 }
 
 .ex-top{
-
     padding:10px 11px;
 
     background:#121217;
@@ -331,7 +440,6 @@ header{
 }
 
 .dot{
-
     width:7px;
     height:7px;
 
@@ -344,7 +452,6 @@ header{
 }
 
 .path{
-
     font:10px monospace;
 
     color:#777;
@@ -357,7 +464,6 @@ header{
 }
 
 .filebar{
-
     padding:9px 11px;
 
     border-bottom:1px solid #19191f;
@@ -372,7 +478,6 @@ header{
 }
 
 .viewer{
-
     height:330px;
 
     overflow:auto;
@@ -385,7 +490,6 @@ header{
 }
 
 pre{
-
     margin:0;
 
     color:#b8b8bf;
@@ -398,7 +502,6 @@ pre{
 }
 
 .meta{
-
     padding:10px;
 
     border-top:1px solid #1b1b21;
@@ -410,11 +513,10 @@ pre{
 
 
 /* =========================
-   BOTÃO FREE FIRE
+   FREE FIRE
 ========================= */
 
 .launch{
-
     margin-top:13px;
 
     width:100%;
@@ -447,20 +549,17 @@ pre{
 
 
 /* =========================
-   COMUNIDADE
+   YOUTUBE
 ========================= */
 
 .social-wrap{
-
     margin-top:24px;
 
     position:relative;
-
     z-index:1;
 }
 
 .social-title{
-
     font-size:10px;
 
     color:#777780;
@@ -475,19 +574,19 @@ pre{
 }
 
 .social-grid{
-
     display:grid;
 
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr;
 
     gap:10px;
 }
 
 .social-card{
-
     display:flex;
 
     align-items:center;
+
+    justify-content:center;
 
     gap:10px;
 
@@ -514,14 +613,12 @@ pre{
 }
 
 .social-card:active{
-
     transform:scale(.97);
 
     border-color:#ff1744;
 }
 
 .social-icon{
-
     width:35px;
     height:35px;
 
@@ -545,14 +642,12 @@ pre{
 }
 
 .social-card strong{
-
     display:block;
 
     font-size:11px;
 }
 
 .social-card small{
-
     display:block;
 
     color:#66666f;
@@ -568,7 +663,6 @@ pre{
 ========================= */
 
 footer{
-
     text-align:center;
 
     color:#45454c;
@@ -577,7 +671,11 @@ footer{
 
     letter-spacing:1px;
 
+    line-height:1.6;
+
     margin-top:23px;
+
+    padding-bottom:5px;
 }
 
 </style>
@@ -608,206 +706,235 @@ footer{
 
 
 <!-- =========================
-     MENU PRINCIPAL
+     MENU
 ========================= -->
 
 <section id="menu" class="screen">
 
-    <div class="panel">
 
-        <div class="section">
-            Escolha seu Trick
-        </div>
+<!-- AVISO -->
 
+<div class="notice">
 
-        <!-- SENSITIVITY -->
+    <div class="notice-title">
+        ⚠ MINI AUXÍLIO DE MIRA
+    </div>
 
-        <button
-            class="btn"
-            onclick="openTrick('Sensitivity Combo')"
-        >
+    <div class="notice-text">
 
-            <div class="icon">
-                S
-            </div>
+        Este site oferece apenas um mini auxílio
+        de mira em segundo plano.
 
-            <div class="txt">
+        <br><br>
 
-                <strong>
-                    Sensitivity Combo
-                </strong>
-
-                <small>
-                    Combotrick.xml
-                </small>
-
-            </div>
-
-            <div class="arrow">
-                ›
-            </div>
-
-        </button>
-
-
-
-        <!-- TRICK UMP -->
-
-        <button
-            class="btn"
-            onclick="openTrick('Trick UMP')"
-        >
-
-            <div class="icon">
-                T
-            </div>
-
-            <div class="txt">
-
-                <strong>
-                    Trick UMP
-                </strong>
-
-                <small>
-                    Trick ump.xml
-                </small>
-
-            </div>
-
-            <div class="arrow">
-                ›
-            </div>
-
-        </button>
-
-
-
-        <!-- AUXILIAR DE MIRA -->
-
-        <button
-            class="btn"
-            onclick="openTrick('Auxiliar de Mira')"
-        >
-
-            <div class="icon">
-                A
-            </div>
-
-            <div class="txt">
-
-                <strong>
-                    Auxiliar de Mira
-                </strong>
-
-                <small>
-                    norecoilcombostyreng.xml
-                </small>
-
-            </div>
-
-            <div class="arrow">
-                ›
-            </div>
-
-        </button>
+        Não é um hack 😂
+        É apenas um auxílio em segundo plano.
 
     </div>
 
-
-
-    <!-- =========================
-         REDES
-    ========================= -->
-
-    <div class="social-wrap">
-
-        <div class="social-title">
-            Comunidade
-        </div>
-
-
-        <div class="social-grid">
-
-
-            <!-- DISCORD -->
-
-            <a
-                class="social-card"
-                href="https://discord.gg/gJxEg8jWE2"
-                target="_blank"
-                rel="noopener"
-            >
-
-                <div class="social-icon">
-                    D
-                </div>
-
-                <div>
-
-                    <strong>
-                        Discord
-                    </strong>
-
-                    <small>
-                        ENTRAR NO SERVIDOR
-                    </small>
-
-                </div>
-
-            </a>
+</div>
 
 
 
-            <!-- YOUTUBE -->
+<!-- META DISCORD -->
 
-            <a
-                class="social-card"
-                href="https://youtube.com/@shinoffx"
-                target="_blank"
-                rel="noopener"
-            >
+<div class="discord-goal">
 
-                <div class="social-icon">
-                    ▶
-                </div>
+    <strong>
+        🚀 RUMO A 1.000 MEMBROS!
+    </strong>
 
-                <div>
+    <span>
 
-                    <strong>
-                        YouTube
-                    </strong>
+        Entre no nosso servidor do Discord
+        e faça parte da comunidade SHINOFFX.
 
-                    <small>
-                        CANAL SHINOFFX
-                    </small>
+        <br>
 
-                </div>
+        Vamos juntos bater a meta de 1K! 🔥
 
-            </a>
+    </span>
+
+    <a
+        href="https://discord.gg/gJxEg8jWE2"
+        target="_blank"
+        rel="noopener"
+    >
+        ENTRAR NO DISCORD
+    </a>
+
+</div>
 
 
-        </div>
 
+<!-- TRICKS -->
+
+<div class="panel">
+
+    <div class="section">
+        Escolha seu Trick
     </div>
 
 
-    <footer>
-        SHINOFFX • TRICK SITE • MOBILE UI
-    </footer>
+    <!-- SENSITIVITY -->
+
+    <button
+        class="btn"
+        onclick="openTrick('Sensitivity Combo')"
+    >
+
+        <div class="icon">
+            S
+        </div>
+
+        <div class="txt">
+
+            <strong>
+                Sensitivity Combo
+            </strong>
+
+            <small>
+                Combotrick.xml
+            </small>
+
+        </div>
+
+        <div class="arrow">
+            ›
+        </div>
+
+    </button>
+
+
+
+    <!-- TRICK UMP -->
+
+    <button
+        class="btn"
+        onclick="openTrick('Trick UMP')"
+    >
+
+        <div class="icon">
+            T
+        </div>
+
+        <div class="txt">
+
+            <strong>
+                Trick UMP
+            </strong>
+
+            <small>
+                Trick ump.xml
+            </small>
+
+        </div>
+
+        <div class="arrow">
+            ›
+        </div>
+
+    </button>
+
+
+
+    <!-- AUXILIAR -->
+
+    <button
+        class="btn"
+        onclick="openTrick('Auxiliar de Mira')"
+    >
+
+        <div class="icon">
+            A
+        </div>
+
+        <div class="txt">
+
+            <strong>
+                Auxiliar de Mira
+            </strong>
+
+            <small>
+                norecoilcombostyreng.xml
+            </small>
+
+        </div>
+
+        <div class="arrow">
+            ›
+        </div>
+
+    </button>
+
+</div>
+
+
+
+<!-- =========================
+     YOUTUBE
+========================= -->
+
+<div class="social-wrap">
+
+    <div class="social-title">
+        Comunidade
+    </div>
+
+    <div class="social-grid">
+
+        <a
+            class="social-card"
+            href="https://youtube.com/@shinoffx"
+            target="_blank"
+            rel="noopener"
+        >
+
+            <div class="social-icon">
+                ▶
+            </div>
+
+            <div>
+
+                <strong>
+                    YouTube
+                </strong>
+
+                <small>
+                    CANAL SHINOFFX
+                </small>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================
+     DIREITOS
+========================= -->
+
+<footer>
+    © 2026 SHINOFFX • TODOS OS DIREITOS RESERVADOS
+</footer>
+
 
 </section>
 
 
 
 <!-- =========================
-     TELA DOS TRICKS
+     TELA DO TRICK
 ========================= -->
 
 <section
     id="trick"
     class="screen hidden"
 >
-
 
     <div class="panel">
 
@@ -826,9 +953,7 @@ footer{
         ></div>
 
 
-        <p
-            class="sub"
-        >
+        <p class="sub">
             Conteúdo aberto no Explorer
         </p>
 
@@ -866,9 +991,9 @@ footer{
 
             <div class="viewer">
 
-                <pre
-                    id="viewer"
-                >Carregando...</pre>
+                <pre id="viewer">
+Carregando...
+                </pre>
 
             </div>
 
@@ -884,13 +1009,15 @@ footer{
 
 
 
-        <!-- ABRIR FREE FIRE -->
+        <!-- FREE FIRE -->
 
         <button
             class="launch"
             onclick="openFreeFire()"
         >
+
             ABRIR FREE FIRE
+
         </button>
 
 
@@ -907,7 +1034,7 @@ footer{
 
 
 /* =========================
-   CONFIGURAÇÃO DOS ARQUIVOS
+   ARQUIVOS DOS TRICKS
 ========================= */
 
 const TRICKS = {
@@ -1036,9 +1163,11 @@ async function openTrick(name){
 
         viewer.textContent =
             "Não foi possível abrir o arquivo.\n\n" +
-            "Verifique se \"" +
-            currentTrick.file +
-            "\" está na mesma pasta do index.html.";
+
+            "Verifique se o arquivo está na mesma pasta do index.html:\n\n" +
+
+            currentTrick.file;
+
 
         meta.textContent =
             "Erro ao carregar arquivo.";
@@ -1060,14 +1189,15 @@ function extractStrings(bytes){
     let current = "";
 
 
-    for(let i = 0; i < bytes.length; i++){
+    for(
+        let i = 0;
+        i < bytes.length;
+        i++
+    ){
 
-        const value = bytes[i];
+        const value =
+            bytes[i];
 
-
-        /*
-         * Caracteres ASCII imprimíveis
-         */
 
         if(
             value >= 32 &&
@@ -1079,9 +1209,13 @@ function extractStrings(bytes){
 
         }else{
 
-            if(current.length >= 3){
+            if(
+                current.length >= 3
+            ){
 
-                result.push(current);
+                result.push(
+                    current
+                );
 
             }
 
@@ -1092,9 +1226,13 @@ function extractStrings(bytes){
     }
 
 
-    if(current.length >= 3){
+    if(
+        current.length >= 3
+    ){
 
-        result.push(current);
+        result.push(
+            current
+        );
 
     }
 
@@ -1132,31 +1270,23 @@ function backMenu(){
 
 function openFreeFire(){
 
-    /*
-     * Tenta abrir o aplicativo
-     * Free Fire no Android.
-     */
-
     window.location.href =
         "freefire://";
 
 
-    /*
-     * Se não abrir,
-     * abre o site oficial.
-     */
+    setTimeout(
+        function(){
 
-    setTimeout(function(){
+            window.open(
+                "https://ff.garena.com/",
+                "_blank"
+            );
 
-        window.open(
-            "https://ff.garena.com/",
-            "_blank"
-        );
-
-    },900);
+        },
+        900
+    );
 
 }
-
 
 </script>
 
